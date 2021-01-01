@@ -39,11 +39,17 @@
     },
     "clonesURI": {
         "type": "string",
-        "defaultValue": "https://api.github.com/repos/matthansen0/azure-dnslb/traffic/clones"
+        "defaultValue": "https://api.github.com/repos/matthansen0/azure-dnslb/traffic/clones",
+        "metadata": {
+            "description": "Replace the username and repo with yours."        }
+
     },
     "trafficURI": {
         "type": "string",
-        "defaultValue": "https://api.github.com/repos/matthansen0/azure-dnslb/traffic/views"
+        "defaultValue": "https://api.github.com/repos/matthansen0/azure-dnslb/traffic/views",
+        "metadata": {
+            "description": "Replace the username and repo with yours."
+        }
     }
   },
   "variables": {
