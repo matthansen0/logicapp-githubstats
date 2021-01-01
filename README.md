@@ -20,12 +20,19 @@ This solution should cost less than $0.05/month (I'll update this statistic once
 
 - Step 1: 
   - You will need a Github Personal Access Tolken, you can view the Github docs on that here: https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token
+- Step 2:
   - Click "Deploy to Azure" below
+- Step 3:
   - Open CloudShell, and run ```get-azaduser -UserPrincipalName yourUserName@company.com | select-object Id``` and copy that Object ID 
+- Step 4:
   - Enter the parameter values on the deployment screen, and click deploy. 
+- Step 5:
   - Once complete, you will need to open the API connection for keyvault, go to "Edit API" and click the blue bar that says "Authorize". You'll be presented with a pop-up sign-in box for a one-time authentication to link the connector to KeyVault. Click save after you're done. 
-  - Open the Logic App, and click "Run Trigger" (the first run will have failed becuase the connector wasn't authorized so you'll see that in the run history). 
+- Step 6:
+  - Open the Logic App, and click "Run Trigger" (the first run will have failed becuase the connector wasn't authorized so you'll see that in the run history).
+- Step 7:
   - You can verify the data by going to the storage account and viewing the table storage using Storage Explorer. 
+- Step 8:
   - Open the PowerBI template, enter your storage account name and account key (account keys tab on the storage account in the portal) and your data should show up on the dashboard. 
 
 [![Deploy To Azure](http://azuredeploy.net/deploybutton.png)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMattHansen0%2Flogicapp-githubstats%2Fmain%2Fazuredeploy.json)  [![Visualize](http://armviz.io/visualizebutton.png)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FMattHansen0%2Flogicapp-githubstats%2Fmain%2Fazuredeploy.json)
