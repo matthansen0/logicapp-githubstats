@@ -34,7 +34,7 @@ PRs and issues welcome!
 <img src="./images/cloudshell.PNG" width="550"/>
 
 
-<img src="./images/objectID.png"/>
+<img src="images/objectID.PNG" width="75%">
 
 
 - **Step 4**:
