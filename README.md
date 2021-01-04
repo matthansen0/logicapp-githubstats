@@ -31,10 +31,10 @@ PRs and issues welcome!
 - **Step 3**:
   - In the Azure Portal, open a PowerShell CloudShell, and run ```get-azaduser -UserPrincipalName yourUserName@company.com | select-object Id``` using the username with which you are logging into Azure (top right of the portal). Copy that Object ID,this is required for creating access policies in Key Vault and is an input parameter for deployment.
 
-<img src="./images/cloudshell.PNG" width="550"/>
+<img src="./images/cloudshell.PNG" width="75%"/>
 
 
-<img src="images/objectID.PNG" width="75%">
+<img src="./images/objectID.PNG" width="75%">
 
 
 - **Step 4**:
@@ -42,25 +42,25 @@ PRs and issues welcome!
 - **Step 5**:
   - Once complete, you will need to open the API connection for keyvault, go to "Edit API" and click the blue bar that says "Authorize". You'll be presented with a pop-up sign-in box for a one-time authentication to link the connector to KeyVault. Click save after you're done. 
 
-<img src="./images/authorizeKV.png"/>
+<img src="./images/authorizeKV.PNG" width="75%">
 
-<img src="./images/connectedKV.png"/>
+<img src="./images/connectedKV.PNG" width="75%">
 
 
 - **Step 6**:
   - Open the Logic App, and click "Run Trigger" (the first run will have failed becuase the connector wasn't authorized so you'll see that in the run history).
 
-<img src="./images/logicappRun.png"/>
+<img src="./images/logicappRun.PNG" width="75%">
+
 
 - **Step 7**:
   - You can verify the data by going to the storage account and viewing the table storage using Storage Explorer. 
 - **Step 8**:
   - Open the PowerBI template using [PowerBI Desktop](https://powerbi.microsoft.com/en-us/downloads/), enter your storage account name and account key (account keys tab on the storage account in the portal) and your data should show up on the dashboard. 
 
-<img src="./images/accessKey.png"/>
+<img src="./images/accessKey.PNG" width="75%">
 
-
-<img src="./images/powerBI.png"/>
+<img src="./images/powerBI.PNG" width="75%">
 
 
 This Logic App will run every day now to collect the stats for that repo and update the storage account with anything new. You now have the data in raw form and loaded into PowerBI and can do anything you'd like with it. 
