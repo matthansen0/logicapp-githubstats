@@ -25,6 +25,7 @@ PRs and issues welcome!
 ### Deployment Video Walkthrough:
 
 <a href="https://www.youtube.com/watch?v=PQJPugVOdQw"> <img src="./images/youtube-icon.png" width="25%"/> </a>
+
 For a video walkthrough, [click here](https://www.youtube.com/watch?v=PQJPugVOdQw). 
 
 ### Step-by-Step Deployment:
