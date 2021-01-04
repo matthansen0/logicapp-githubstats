@@ -22,7 +22,12 @@ PRs and issues welcome!
 
 ## How to deploy: 
 
-*I will be recording and posting a deployment video soon, in the mean time you can follow the steps below.*
+### Deployment Video Walkthrough:
+
+<a href="https://www.youtube.com/watch?v=PQJPugVOdQw"> <img src="./images/youtube-icon.png" width="25%"/> </a>
+For a video walkthrough, [click here](https://www.youtube.com/watch?v=PQJPugVOdQw). 
+
+### Step-by-Step Deployment:
 
 - **Step 1**: 
   - You will need a Github Personal Access Token, you can view the Github docs on that here: https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token
