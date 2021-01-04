@@ -31,7 +31,7 @@ PRs and issues welcome!
 - **Step 3**:
   - In the Azure Portal, open a PowerShell CloudShell, and run ```get-azaduser -UserPrincipalName yourUserName@company.com | select-object Id``` using the username with which you are logging into Azure (top right of the portal). Copy that Object ID,this is required for creating access policies in Key Vault and is an input parameter for deployment.
 
-<img src="images/cloudshell.png" width="550">
+<img src="/images/cloudshell.png" width="550">
 
 
 <img src="images/objectID.png" width="550">
