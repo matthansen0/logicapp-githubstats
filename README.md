@@ -65,7 +65,7 @@ For a video walkthrough, [click here](https://www.youtube.com/watch?v=PQJPugVOdQ
 - **Step 7**:
   - You can verify the data by going to the storage account and viewing the table storage using Storage Explorer. 
 - **Step 8**:
-  - Open the PowerBI template using [PowerBI Desktop](https://powerbi.microsoft.com/en-us/downloads/), enter your storage account name and account key (account keys tab on the storage account in the portal) and your data should show up on the dashboard. 
+  - Open [the PowerBI template for this solution](./githubStats_template.pbit) using [PowerBI Desktop](https://powerbi.microsoft.com/en-us/downloads/), enter your storage account name and account key (account keys tab on the storage account in the portal) and your data should show up on the dashboard. 
 
 <img src="./images/accessKey.PNG" width="75%">
 
