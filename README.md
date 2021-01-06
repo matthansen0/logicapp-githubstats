@@ -13,18 +13,15 @@ The Logic App is triggered daily, and pulls the PAT from the key vault, queries 
 
 After the data is loaded into Table Storage you can do whatever you'd like with it, though i've included a basic PowerBI template to visualize the data using PowerBI desktop.
 
-This solution should cost less than $0.05/month (I'll update this statistic once I've run it longer, as of Dec 31, 2020 I've had it running for 4 days and it's cost me $0.01). 
+**This solution should cost less than $0.05/month.*
 
-### Contributing: 
-
-PRs and issues welcome! 
 
 
 ## How to deploy: 
 
 ### Deployment Video Walkthrough:
 
-<a href="https://www.youtube.com/watch?v=PQJPugVOdQw"> <img src="./images/youtube-icon.png" width="25%"/> </a>
+<a href="https://www.youtube.com/watch?v=PQJPugVOdQw"> <img src="./images/youtube-icon.png" width="20%"/> </a>
 
 For a video walkthrough, [click here](https://www.youtube.com/watch?v=PQJPugVOdQw). 
 
@@ -33,7 +30,13 @@ For a video walkthrough, [click here](https://www.youtube.com/watch?v=PQJPugVOdQ
 - **Step 1**: 
   - You will need a Github Personal Access Token, you can view the Github docs on that here: https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token
 - **Step 2**:
-  - Click [Deploy to Azure](#deploy), in the Deploy section of this page.
+  - Click the Deploy to Azure button below.
+
+[//]: # (The short URLs below are to show impact of this solution by tracking number of deployments. You can use the direct link if you wish - https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMattHansen0%2Flogicapp-githubstats%2Fmain%2Fazuredeploy.json)
+
+
+[![Deploy To Azure](https://aka.ms/deploytoazurebutton)](https://urls.hansencloud.com/deploy-githubstats-logicapp)  [![Visualize](http://armviz.io/visualizebutton.png)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FMattHansen0%2Flogicapp-githubstats%2Fmain%2Fazuredeploy.json)
+
 - **Step 3**:
   - In the Azure Portal, open a PowerShell CloudShell, and run ```get-azaduser -UserPrincipalName yourUserName@company.com | select-object Id``` using the username with which you are logging into Azure (top right of the portal). Copy that Object ID,this is required for creating access policies in Key Vault and is an input parameter for deployment.
 
@@ -70,9 +73,7 @@ For a video walkthrough, [click here](https://www.youtube.com/watch?v=PQJPugVOdQ
 
 
 This Logic App will run every day now to collect the stats for that repo and update the storage account with anything new. You now have the data in raw form and loaded into PowerBI and can do anything you'd like with it. 
-## Deploy:
 
-[//]: # (The short URLs below are to show impact of this solution by tracking number of deployments. You can use the direct link if you wish - https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMattHansen0%2Flogicapp-githubstats%2Fmain%2Fazuredeploy.json)
+## Contributing: 
 
-
-[![Deploy To Azure](http://azuredeploy.net/deploybutton.png)](https://urls.hansencloud.com/deploy-githubstats-logicapp)  [![Visualize](http://armviz.io/visualizebutton.png)](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FMattHansen0%2Flogicapp-githubstats%2Fmain%2Fazuredeploy.json)
+PRs and issues welcome! 
