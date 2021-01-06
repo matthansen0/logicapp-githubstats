@@ -9,7 +9,7 @@ This ARM template will deploy the following:
 - Storage Account (to store your Github stats as Table Storage)
 - Logic App 
 
-The Logic App is triggered daily, and pulls the PAT from the key vault, queries the Github API, parses the JSON, and stores it in Table Storage. 
+The Logic App is triggered daily, and pulls the PAT from the Key Vault, queries the Github API, parses the JSON, and stores it in Table Storage. 
 
 After the data is loaded into Table Storage you can do whatever you'd like with it, though i've included a basic PowerBI template to visualize the data using PowerBI desktop.
 
