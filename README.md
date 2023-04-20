@@ -13,7 +13,7 @@ The Logic App is triggered daily, and pulls the PAT from the Key Vault, queries 
 
 After the data is loaded into Table Storage you can do whatever you'd like with it, though i've included a basic PowerBI template to visualize the data using PowerBI desktop.
 
-**This solution should cost less than $0.05/month. Below is the last 12 months of running costs with the default daily trigger, you can reduce that cost to less than $0.01/month by changing it to a weekly trigger*
+**This solution should cost less than $0.05/month. Below is the last 12 months of running costs with the default daily trigger, you can reduce that cost to less than $0.01/month by changing it to a weekly trigger.*
 
 
 <img src="./images/runningCost.png" width="75%">
